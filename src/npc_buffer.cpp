@@ -199,7 +199,7 @@ public:
         // Cure Resurrection Sickness
         if (BuffCureRes && player->HasAura(15007))
         {
-            player->RemoveAura(15007, true);
+            player->RemoveAura(15007);
             std::ostringstream res;
             res << "The aura of death has been lifted from you " << PlayerName << ". Watch yourself out there!";
             creature->MonsterWhisper(res.str().c_str(), player);
